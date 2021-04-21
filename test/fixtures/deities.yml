@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  power: MyString
+  time_judgment: 2021-04-20 12:26:39
+  height: 1
+  on_earth: false
+  in_space: false
+  wears_glasses: false
+  human_sacrifices: 1
+  sacrifices: false
+
+two:
+  name: MyString
+  power: MyString
+  time_judgment: 2021-04-20 12:26:39
+  height: 1
+  on_earth: false
+  in_space: false
+  wears_glasses: false
+  human_sacrifices: 1
+  sacrifices: false

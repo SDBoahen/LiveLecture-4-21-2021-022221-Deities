@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Deities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Power</th>
+      <th>Time judgment</th>
+      <th>Height</th>
+      <th>On earth</th>
+      <th>In space</th>
+      <th>Wears glasses</th>
+      <th>Human sacrifices</th>
+      <th>Sacrifices</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+
+
+  <% @deities.each do |deity| %>
+
+  <%= deity.name %>
+  <%= deity.power %>
+  <%= deity.time_judgment %>
+  <%= deity.height %>
+  <%= deity.on_earth %>
+  <%= deity.in_space %>
+  <%= deity.wears_glasses %>
+  <%= deity.human_sacrifices %>
+  <%= deity.sacrifices %>
+
+  <% end %>
+
+
+  <tbody>
+    <% @deities.each do |deity| %>
+      <tr>
+        <td><%= deity.name %></td>
+        <td><%= deity.power %></td>
+        <td><%= deity.time_judgment %></td>
+        <td><%= deity.height %></td>
+        <td><%= deity.on_earth %></td>
+        <td><%= deity.in_space %></td>
+        <td><%= deity.wears_glasses %></td>
+        <td><%= deity.human_sacrifices %></td>
+        <td><%= deity.sacrifices %></td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+

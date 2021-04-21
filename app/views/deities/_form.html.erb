@@ -1,0 +1,62 @@
+<%= form_with(model: deity) do |form| %>
+  <% if deity.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(deity.errors.count, "error") %> prohibited this deity from being saved:</h2>
+
+      <ul>
+        <% deity.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :power %>
+    <%= form.text_field :power %>
+  </div>
+
+  <div class="field">
+    <%= form.label :time_judgment %>
+    <%= form.time_select :time_judgment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :height %>
+    <%= form.number_field :height %>
+  </div>
+
+  <div class="field">
+    <%= form.label :on_earth %>
+    <%= form.check_box :on_earth %>
+  </div>
+
+  <div class="field">
+    <%= form.label :in_space %>
+    <%= form.check_box :in_space %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wears_glasses %>
+    <%= form.check_box :wears_glasses %>
+  </div>
+
+  <div class="field">
+    <%= form.label :human_sacrifices %>
+    <%= form.number_field :human_sacrifices %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sacrifices %>
+    <%= form.check_box :sacrifices %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
